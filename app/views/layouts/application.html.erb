@@ -2,16 +2,17 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
+        <title><%= title %></title>
         <%= csrf_meta_tag %>
+
+        <!-- Stylesheets -->
+        <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+        <%= stylesheet_link_tag 'blueprint/print', :media => 'screen' %>
     </head>
 
     <body>
 
-       <h1>Sample App</h1> 
-       <p>
        <%= yield %>
-       </p>
 
     </body>
 </html>
